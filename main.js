@@ -1,5 +1,8 @@
 function validTime(str) {
-   //  write code here.
+   let [hours, minutes] = str.split(":")
+   let validHours = hours < 24
+   let validMinutes = minutes < 60
+   return !!(validHours && validMinutes)
 }
 
 
